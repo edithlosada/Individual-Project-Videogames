@@ -1,0 +1,75 @@
+.cards_area{
+  width: 95%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardcont1{
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cardcont{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.p_button{
+  height: 40px;
+  width: 40px;
+  color: white;
+  border-width: 0.5px;
+  border-color: rgb(32, 32, 65);
+  background-color: rgb(32, 32, 65);
+  border-radius: 50%;
+  font-size: 24px;
+}
+.p_button:hover{
+  background-color: rgb(29, 29, 170);
+  /* transform: scale(1.03); */
+}
+
+.p_btn_area{
+  margin: 10px 0 10px 0; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.one_button{
+  width: 21px;
+  height: 21px;
+  margin: 0 3px 0 3px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: white;
+  border-color: rgb(32, 32, 65);
+  background-color: rgb(37, 37, 61);
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+.one_button:hover{
+  background-color: rgb(29, 29, 170);
+  transform: scale(1.03);
+}
+
+.one_button:active{
+  background-color: rgb(170, 29, 158);
+  transform: scale(1.03);
+}

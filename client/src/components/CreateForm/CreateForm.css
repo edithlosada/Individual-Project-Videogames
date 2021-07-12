@@ -1,0 +1,121 @@
+.ng_page{
+  width: 100%;
+  background-color: #0a122b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+  min-height: 100vh;
+  box-shadow: inset 0px 3px 4px #376d86; 
+}
+
+.ng_container{
+  margin-top: 30px;
+  width: 800px;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  box-sizing: border-box;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+@media (max-width: 800px){
+  .ng_container {
+    width: 95%;
+  }
+}
+
+.ng_title{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  font-size: 2.3em ;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.ng_formArea{
+  width: 85%;
+  margin-right: 0px;
+  margin-left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+
+.ng_forminput{
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 35px;
+  font-size: 14.5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 10px;
+  padding: 0px;
+  padding-left: 14px;
+  background-color:hsl(0, 0%, 100%);
+  border-color:hsl(0, 0%, 80%);
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+  align-items: center;
+  text-justify: center;
+}
+
+textarea{
+  resize: vertical;
+}
+
+.ng_textinput{
+  width: 100%;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 8px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  font-size: 14.5px;
+  background-color:hsl(0, 0%, 100%);
+  border-color:hsl(0, 0%, 80%);
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.ng_selectArea{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: left;
+  margin-bottom: 5px;
+}
+
+.ng_button-area{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 18px;
+}
+
+.ng_button{
+  width: 80px; 
+  height: 35px;
+  text-align: center;
+  font-size: 1em ;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: #063233;
+  background-color:#213b8a;
+  color: cornsilk;
+}
+
+.ng_button:hover{
+  background-color:#0a122b;
+  color: cornsilk;
+}

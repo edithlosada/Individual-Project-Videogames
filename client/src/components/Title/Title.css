@@ -1,0 +1,17 @@
+.logo{
+  height: 70px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+
+.title{
+  width: 400px;
+	display: flex;
+	flex-direction: row;
+  align-items: center;
+}
+
+

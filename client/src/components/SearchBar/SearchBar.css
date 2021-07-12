@@ -1,0 +1,35 @@
+.search_game{
+  position: relative;
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-self: center;
+}
+
+.search_input{
+  width: 350px;
+  height: 30px;
+  /* margin-right: 50 px; */
+  margin: 6px;
+  border-width: 1px;
+  border-color: black;
+  border-radius: 5px;
+  font-size: 1em;
+  padding-left: 10px;
+}
+
+.search_btn{
+  height: 35px;
+  margin: 6px;
+  color: white;
+  border-color: rgb(32, 32, 65);
+  background-image: linear-gradient(to top, rgb(12, 12, 105) 50%, #348AC7 100%);
+  border-radius: 5px;
+  font-size: 1em;
+
+}
+.search_btn:hover{
+  transform: scale(1.03);
+}
+

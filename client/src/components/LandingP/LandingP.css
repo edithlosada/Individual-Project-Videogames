@@ -1,0 +1,48 @@
+.base{
+  width: 100%;
+  height: 100%;
+  min-width: 300px;
+  min-height: 100vh;
+  /* background: url(../../imgs/minecraft.jpg) no-repeat center center fixed; */
+  background: url(../../imgs/joystick.jpg) no-repeat center center fixed;
+  /* background: url(../../imgs/multiple.jpg) no-repeat center center fixed; */
+  background-size: cover;
+  -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  margin: 0px;
+}
+
+h1.lp_title{
+  position: absolute;
+  color: antiquewhite;
+  top: 9%;
+  font-size: 3em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+}
+
+.enter_btn{
+  position: absolute;
+  left: 50%;
+  top: 56%;
+  margin-left: -90px;
+  margin-top: -40px;
+  height: 80px;
+  width: 180px;
+  color: black;
+  font-weight: bolder;
+  border-width: 1.5px;
+  border-color: black;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 2em;
+  box-shadow: 0 0 20px #181717;
+}
+.enter_btn:hover{
+  box-shadow: 0 0 10px #3e3e3e;
+  transform: scale(1.03);
+}

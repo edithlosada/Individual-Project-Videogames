@@ -1,0 +1,24 @@
+.ocont{
+  /* width: 500px; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.oselect{
+  height: 35px;
+  width: 120px;
+  margin: 6px;
+  color: white;
+  border-color: rgb(32, 32, 65);
+  background-image: linear-gradient(to top, rgb(12, 12, 105) 50%, #348AC7 100%);
+  border-radius: 5px;
+  font-size: 1em;
+  padding-left: 5px;
+}
+
+.oselect2{
+  color: black;
+}

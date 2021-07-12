@@ -1,0 +1,22 @@
+.ord_cont{
+  /* width: 330px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.ord_select{
+  height: 35px;
+  margin: 6px;
+  color: white;
+  border-color: rgb(32, 32, 65);
+  background-image: linear-gradient(to top, rgb(12, 12, 105) 50%, #348AC7 100%);
+  border-radius: 5px;
+  font-size: 1em;
+  padding-left: 5px;
+}
+.ord_select2{
+  color: black;
+}
