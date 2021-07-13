@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import './GamesToShow.css';
 import GameCard from '../GameCard/GameCard.jsx';
 
-export default function GamesToShow() {
+export default function GamesToShow({perpage}) {
 
   let orig = useSelector(state => state.searchOrig);
   let inits = useSelector(state => state.initsearch);
@@ -16,10 +16,11 @@ export default function GamesToShow() {
   let [currentPage, setCurrentPage] = useState(0); //inicialmente la primer página
   let [currentPageArr, setCurrentPArr] = useState([]);
   let [pages, setPages] = useState(null);
-  let PER_PAGE = 6;
+  let PER_PAGE = parseInt(perpage);
 
   useEffect(() => {
-  },[inits])
+  }, [inits,perpage])
+
   useEffect(() => {
     function letsorder(arr, op) {
       if ((op === 'abcCreciente') || (op === 'abcDecreciente')) {
@@ -84,6 +85,14 @@ export default function GamesToShow() {
       if (ordarr) {
         inpageshow(currentPage, PER_PAGE, ordarr);
       }
+      let circles = document.getElementsByClassName("one_button");
+      for (let i = 0; i < pages.length; i++) {
+        if (i !== currentPage) {
+          circles[i].className = "one_button inactive"
+        } else {
+          circles[currentPage].className = "one_button active"
+        }
+      }
     }
   }, [currentPage, PER_PAGE, ordarr, pages])
 
@@ -103,12 +112,12 @@ export default function GamesToShow() {
 
   function handlePage(e) {
     setCurrentPage(e.target.value - 1);
-    console.log('current page is' + currentPage);
   }
 
   return (
     <div className="cards_area">
       {inits && <>
+
         <button className="p_button" onClick={handlePrev}>&#8249;</button>
         <div className="cardcont1" >
           <div className="cardcont" >
@@ -118,7 +127,7 @@ export default function GamesToShow() {
           </div>
           <div className="p_btn_area">
             {pages && pages.map((p, i) => (
-              <button key={i} className="one_button" onClick={handlePage} value={p}> {p} </button>
+              <button key={i} className="one_button inactive" onClick={handlePage} value={p}> {p} </button>
             ))}
           </div>
         </div>

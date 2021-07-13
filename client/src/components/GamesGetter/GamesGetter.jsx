@@ -22,11 +22,10 @@ export default function GamesGetter() {
   let [genFiltGames, setGenFiltGames] = useState(null);
   let [titFiltGames, setTitFiltGames] = useState(null);
 
-
+  let [cardnum, setCardnum] = useState(6);
 
   useEffect(() => {
-    console.log('InitSearch:',inits, 'show:',show, 'origin:', orig)
-  }, [show,inits]);  
+  }, [show, inits]);
 
   // Según el origen manda a buscar el arreglo de juegos 
   // donde corresponda y admninistra mjes.
@@ -118,12 +117,25 @@ export default function GamesGetter() {
     dispatch(setGamesToShow(titFiltGames));
   }, [titFiltGames, dispatch])
 
+  function handleChange(e){
+    setCardnum(e.target.value)
+  }
+
+  useEffect(() => {
+  }, [cardnum]);
+
 
   return (
     <div className="p_cards_area">
       {show && <h3> At first choose a search origin (API/DB)...</h3>}
       {gettingG && <h3> ...Getting games from {orig}.</h3>}
-      <GamesToShow />
+      {(!show && !gettingG )&& <>
+      <form>
+        <label htmlFor="ppage" className="perpage_label">Per page: </label>
+        <input type="number" id="ppage" className="perpage" defaultValue="6" min="6" max="20" onChange={handleChange}/>
+      </form>
+      <GamesToShow perpage={cardnum}/>
+      </>}
     </div>
   )
 }
