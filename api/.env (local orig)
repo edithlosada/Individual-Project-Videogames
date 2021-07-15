@@ -1,0 +1,7 @@
+API_KEY=bb129cbd5b1b4968a7aec68ed0a7b91d
+DB_USER=edith
+DB_PASSWORD=mifafe123
+DB_HOST=localhost
+DB_CONNECTION=postgres
+DB_PORT=5432
+DB_NAME=videogames

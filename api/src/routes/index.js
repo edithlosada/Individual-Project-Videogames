@@ -20,6 +20,10 @@ router.use('/dbvideogame', dbvgid);
 router.use('/apigenres', apig);
 // router.use('/prueba', prueba);
 
+router.get('/', async (req, res) => {
+  res.send('root page')
+})
+
 module.exports = router;
 
 // {

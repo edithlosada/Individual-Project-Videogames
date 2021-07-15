@@ -52,4 +52,4 @@ npm start
                                                                                                                                           
 <hr/> 
 
-By [Edith Losada](https://github.com/edithlosada) with 🤍
+By [Edith Losada](https://github.com/edithlosada) with ❤️ 
