@@ -32,7 +32,16 @@ A user may search from any of the available sources: external API or Database, a
 ```
 git clone https://github.com/edithlosada/PIVideogames
 ```
-In order to run, it needs to have both front (client folder) and back (api folder) to be started simultaneously. 
+In order to run, it needs to have both front (client folder) and back (api folder) to be started simultaneously. Also, a file with name .env must be placed inside your api folder with your own database information and api_key:
+```
+API_KEY=xxxxxxx
+DB_USER=xxxxxxx
+DB_PASSWORD=xxxxxxx
+DB_HOST=localhost
+DB_CONNECTION=postgres
+DB_PORT=5432
+DB_NAME=xxxxxxx
+```
 
 2. Open a terminal in 'client' folder and run:
 ```
@@ -44,12 +53,12 @@ npm start
 
 ## Previews
   <p>
+    <img  align="center" src="./1.png" alt="" width="280 height="140"/>
+    <img  align="center" src="./2.png" alt="" width="280 height="140"/>
     <a href="https://MyVideogames.app/" target="_blank">
-      <img  align="center" src="https://github.com/edithlosada/landPage.png" alt="" width="280 height="140"/>
-    </a>
   </p>  
 
                                                                                                                                           
 <hr/> 
 
-By [Edith Losada](https://github.com/edithlosada) with ❤️ 
+By [Edith Losada](https://github.com/edithlosada) with :heart: 
